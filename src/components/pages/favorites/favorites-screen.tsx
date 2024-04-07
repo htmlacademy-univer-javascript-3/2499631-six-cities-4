@@ -63,7 +63,7 @@ function FavoritesScreen({favorites}: FavoritesScreenProps): JSX.Element {
                   </div>
                   <div className="favorites__places">
                     {favoritesMap[city].map((place) => (
-                      <OfferCard key={place.id} offer={place}/>
+                      <OfferCard key={place.id} offer={place} cardType={'typical'}/>
                     ))}
                   </div>
                 </li>
