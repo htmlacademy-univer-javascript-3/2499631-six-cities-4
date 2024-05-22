@@ -1,15 +1,14 @@
-import { Review } from '../../types/review.ts';
-import OneReview from '../review/review.tsx';
+import { Review } from '../../types/review';
+import ReviewItem from '../review-item/review-item';
 
-type ReviewListProps = {
+type ReviewsListProps = {
   reviews: Review[];
 };
-
-function ReviewsList({reviews}: ReviewListProps): JSX.Element {
+function ReviewsList({ reviews }: ReviewsListProps): JSX.Element {
   return (
     <ul className="reviews__list">
       {reviews.map((review) => (
-        <OneReview key={review.id} review={review}/>
+        <ReviewItem key={review.id} review={review} />
       ))}
     </ul>
   );
