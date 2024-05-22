@@ -1,51 +1,45 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { AppRoute, AuthorizationStatus } from '../../consts';
+import MainScreen from '../../pages/main-screen/main-screen';
+import LoginScreen from '../../pages/login-screen/login-screen';
+import FavoutitesScreen from '../../pages/favourites-screen/favourites-screen';
+import OfferScreen from '../../pages/offer-screen/offer-screen';
+import ErrorScreen from '../../pages/error-screen/error-screen';
+import PrivateRoute from '../private-route/private-route';
+import { Review } from '../../types/review';
+import { useAppDispatch, useAppSelector } from '../../hooks';
+import { setOffersList } from '../../store/action';
 import { Offer } from '../../types/offer';
-import { Review } from '../../types/review.ts';
 
-import MainScreen from '../pages/main-screen/main-screen';
-import FavoritesScreen from '../pages/favorites/favorites-screen';
-import LoginScreen from '../pages/login-screen/login-screen';
-import OfferScreen from '../pages/offer/offer-screen';
-import NotFoundScreen from '../pages/not-found-screen/not-found-screen';
-import PrivateRoute from '../../private-route/private-route';
-
-type AppScreenProps = {
-  cardsNumber: number;
-  offers: Offer[];
+type AppComponentProps = {
   reviews: Review[];
 };
 
-function App({cardsNumber, offers, reviews}: AppScreenProps): JSX.Element {
-  const favorites = offers.filter((o) => o.isFavorite);
+function App({ reviews }: AppComponentProps): JSX.Element | null {
+  const offers: Offer[] = useAppSelector((state) => state.offersList);
+  const dispatch = useAppDispatch();
+  dispatch(setOffersList());
+
+  const favourites = offers.filter((o) => o.isFavorite);
+  if (offers.length === 0) {
+    return null;
+  }
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="*" element={<ErrorScreen />} />
+        <Route path="/" element={<MainScreen />} />
         <Route
-          path={AppRoute.Main}
-          element={<MainScreen cardsNumber={cardsNumber} offers={offers} favorites={favorites}/>}
-        />
-        <Route
-          path={AppRoute.Login}
-          element={<LoginScreen/>}
-        />
-        <Route
-          path={AppRoute.Favorites}
+          path="/favourites"
           element={
-            <PrivateRoute
-              authorizationStatus={AuthorizationStatus.Auth}
-            >
-              <FavoritesScreen favorites={favorites}/>
+            <PrivateRoute>
+              <FavoutitesScreen favourites={favourites} />
             </PrivateRoute>
           }
         />
+        <Route path="/login" element={<LoginScreen />} />
         <Route
-          path={AppRoute.Offer}
-          element={<OfferScreen reviews={reviews} favorites={favorites}/>}
-        />
-        <Route
-          path="*"
-          element={<NotFoundScreen/>}
+          path="/offer/:id"
+          element={<OfferScreen reviews={reviews} offers={offers} />}
         />
       </Routes>
     </BrowserRouter>

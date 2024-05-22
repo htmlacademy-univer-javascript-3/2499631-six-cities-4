@@ -1,112 +1,124 @@
 import { Offer } from '../types/offer';
 
-
 export const offers: Offer[] = [
   {
-    id: '0',
-    image: 'public/img/apartment-01.jpg',
+    id: '1',
+    title: 'Beautiful & luxurious studio at great location',
+    type: 'apartment',
+    price: 120,
     city: {
       name: 'Amsterdam',
       location: {
-        latitude: 52.3909553943508,
-        longitude: 4.85309666406198,
-        zoom: 8
-      }
+        latitude: 52.35514938496378,
+        longitude: 4.673877537499948,
+        zoom: 8,
+      },
     },
-    title: 'Beautiful & luxurious studio at great location',
-    description: 'A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.',
+    location: {
+      latitude: 52.3909553943508,
+      longitude: 4.85309666406198,
+      zoom: 8,
+    },
+    isFavorite: true,
     isPremium: true,
-    type: 'Apartment',
-    rating: 4.8,
-    bedrooms: 3,
-    maxAdults: 4,
-    price: 120,
-    owner: {
-      avatar: 'public/img/avatar-angelina.jpg',
-      name: 'Angelina',
-      isPro: true
-    },
-    isFavorite: true,
+    rating: 4,
+    previewImage:
+      'https://w.forfun.com/fetch/85/85ae14568a42dcfeb55be68307d1a797.jpeg',
   },
-
-  {
-    id: '1',
-    image: 'public/img/room.jpg',
-    city: {
-      name: 'Amsterdam',
-      'location': {
-        'latitude': 52.3609553943508,
-        'longitude': 4.85309666406198,
-        'zoom': 8
-      }
-    },
-    title: 'Wood and stone place',
-    description: 'A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.',
-    isPremium: false,
-    type: 'Room',
-    rating: 3,
-    bedrooms: 1,
-    maxAdults: 2,
-    price: 80,
-    owner: {
-      avatar: 'public/img/avatar-angelina.jpg',
-      name: 'Angelina',
-      isPro: true
-    },
-    isFavorite: true,
-  },
-
   {
     id: '2',
-    image: 'public/img/apartment-02.jpg',
+    title: 'Beautiful & luxurious studio at great location',
+    type: 'apartment',
+    price: 120,
     city: {
       name: 'Amsterdam',
-      'location': {
-        'latitude': 52.3909553943508,
-        'longitude': 4.929309666406198,
-        'zoom': 8
-      }
+      location: {
+        latitude: 52.35514938496378,
+        longitude: 4.673877537499948,
+        zoom: 8,
+      },
     },
-    title: 'Canal View Prinsengracht',
-    description: 'A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.',
-    isPremium: false,
-    type: 'Apartment',
-    rating: 4,
-    bedrooms: 3,
-    maxAdults: 4,
-    price: 132,
-    owner: {
-      avatar: 'public/img/avatar-angelina.jpg',
-      name: 'Angelina',
-      isPro: true
+    location: {
+      latitude: 52.3609553943508,
+      longitude: 4.85309666406198,
+      zoom: 8,
     },
     isFavorite: true,
+    isPremium: false,
+    rating: 3,
+    previewImage:
+      'https://w.forfun.com/fetch/85/85ae14568a42dcfeb55be68307d1a797.jpeg',
   },
-
   {
     id: '3',
-    image: 'public/img/apartment-03.jpg',
+    title: 'Beautiful & luxurious studio at great location',
+    type: 'apartment',
+    price: 120,
     city: {
       name: 'Amsterdam',
-      'location': {
-        'latitude': 52.3809553943508,
-        'longitude': 4.939309666406198,
-        'zoom': 8
-      }
+      location: {
+        latitude: 52.35514938496378,
+        longitude: 4.673877537499948,
+        zoom: 8,
+      },
     },
-    title: 'Nice, cozy, warm big bed apartment',
-    description: 'A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.',
+    location: {
+      latitude: 52.3909553943508,
+      longitude: 4.929309666406198,
+      zoom: 8,
+    },
+    isFavorite: false,
     isPremium: false,
-    type: 'Apartment',
-    rating: 4.8,
-    bedrooms: 3,
-    maxAdults: 4,
-    price: 180,
-    owner: {
-      avatar: 'public/img/avatar-angelina.jpg',
-      name: 'Angelina',
-      isPro: true
+    rating: 4.24,
+    previewImage:
+      'https://w.forfun.com/fetch/85/85ae14568a42dcfeb55be68307d1a797.jpeg',
+  },
+  {
+    id: '4',
+    title: 'Beautiful & luxurious studio at great location',
+    type: 'apartment',
+    price: 120,
+    city: {
+      name: 'Amsterdam',
+      location: {
+        latitude: 52.35514938496378,
+        longitude: 4.673877537499948,
+        zoom: 8,
+      },
+    },
+    location: {
+      latitude: 52.3809553943508,
+      longitude: 4.939309666406198,
+      zoom: 8,
     },
     isFavorite: true,
+    isPremium: false,
+    rating: 2,
+    previewImage:
+      'https://w.forfun.com/fetch/85/85ae14568a42dcfeb55be68307d1a797.jpeg',
+  },
+  {
+    id: '5',
+    title: 'Beautiful & luxurious studio at great location',
+    type: 'apartment',
+    price: 120,
+    city: {
+      name: 'Paris',
+      location: {
+        latitude: 52.35514938496378,
+        longitude: 4.673877537499948,
+        zoom: 8,
+      },
+    },
+    location: {
+      latitude: 52.3809553943508,
+      longitude: 4.939309666406198,
+      zoom: 8,
+    },
+    isFavorite: true,
+    isPremium: false,
+    rating: 2,
+    previewImage:
+      'https://w.forfun.com/fetch/85/85ae14568a42dcfeb55be68307d1a797.jpeg',
   },
 ];
