@@ -1,6 +1,6 @@
 import { getAuthorizationStatus } from '../../store';
 import { useAppSelector } from '../../hooks';
-import { Routes } from '../../const';
+import { Routes } from '../../consts/const.ts';
 import PageLayout from '../page-layout/page-layout';
 import MainScreen from '../../pages/main-screen/main-screen';
 

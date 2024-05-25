@@ -1,5 +1,5 @@
-import { Review } from '../../types/review';
-import { formatRating } from '../../utils';
+import { Review } from '../../types/review/review.ts';
+import { formatRating } from '../../utils/utils.ts';
 const USER_AVATAR_SIZES = {
   height: '54',
   width: '54',

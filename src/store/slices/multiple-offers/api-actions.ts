@@ -1,8 +1,8 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { Offer } from '../../../types/offer';
-import { APIRoute, NameSpace } from '../../../const';
+import { Offer } from '../../../types/offer/offer.ts';
+import { APIRoute, NameSpace } from '../../../consts/const.ts';
 
-import { AsyncThunkConfig } from '../../../types/state';
+import { AsyncThunkConfig } from '../../../types/state/state.ts';
 
 export const fetchOffersAction = createAsyncThunk<
   Offer[],

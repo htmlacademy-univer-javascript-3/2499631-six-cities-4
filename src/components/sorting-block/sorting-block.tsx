@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { memo, useState } from 'react';
 import cn from 'classnames';
-import { SortingType } from '../../const';
+import { SortingType } from '../../consts/const.ts';
 import { changeSortingType, getSelectedSortType } from '../../store';
 import { useAppDispatch, useAppSelector } from '../../hooks';
 
@@ -52,4 +52,6 @@ function SortingBlock() {
   );
 }
 
-export default SortingBlock;
+const SortingBlockMemo = memo(SortingBlock);
+
+export default SortingBlockMemo;

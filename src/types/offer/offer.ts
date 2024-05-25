@@ -1,4 +1,4 @@
-import { CityName } from '../const';
+import { CityName } from '../../consts/const.ts';
 
 export type Location = {
   latitude: number;

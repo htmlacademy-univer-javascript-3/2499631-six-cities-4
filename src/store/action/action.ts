@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 
 import { createAction } from '@reduxjs/toolkit';
-import { Routes } from '../const';
+import { Routes } from '../../consts/const.ts';
 
 export const REDIRECT_TO_ROUTE_TYPE = 'app/redirectToRoute';
 

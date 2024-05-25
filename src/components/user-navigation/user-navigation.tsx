@@ -1,4 +1,4 @@
-import { Routes } from '../../const';
+import { Routes } from '../../consts/const.ts';
 import { Link } from 'react-router-dom';
 import {
   getAuthCheckedStatus,

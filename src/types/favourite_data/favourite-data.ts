@@ -1,4 +1,4 @@
-import { FavouriteStatus } from '../const';
+import { FavouriteStatus } from '../../consts/const.ts';
 
 export type FavouriteData = {
   offerId: string;

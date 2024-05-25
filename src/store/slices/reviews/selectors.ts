@@ -1,7 +1,7 @@
-import { NameSpace, Status } from '../../../const';
-import { Review } from '../../../types/review';
+import { NameSpace, Status } from '../../../consts/const.ts';
+import { Review } from '../../../types/review/review.ts';
 
-import { State } from '../../../types/state';
+import { State } from '../../../types/state/state.ts';
 
 export const getReviews = (state: State): Review[] =>
   state[NameSpace.ReviewsData].reviews;

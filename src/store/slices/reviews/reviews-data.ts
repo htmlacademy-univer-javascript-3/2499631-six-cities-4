@@ -1,8 +1,8 @@
-import { NameSpace, Status } from '../../../const';
+import { NameSpace, Status } from '../../../consts/const.ts';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 import { fetchReviewsAction, postReviewAction } from './api-actions';
-import { Review } from '../../../types/review';
+import { Review } from '../../../types/review/review.ts';
 
 type ReviewsData = {
   reviews: Review[];

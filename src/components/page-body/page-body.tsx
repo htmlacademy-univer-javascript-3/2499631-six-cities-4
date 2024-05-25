@@ -2,7 +2,7 @@ import cn from 'classnames';
 import { getFavorites } from '../../store';
 import { useAppSelector } from '../../hooks';
 import { useLocation } from 'react-router-dom';
-import { Routes } from '../../const';
+import { Routes } from '../../consts/const.ts';
 
 interface PageBodyProps {
   children: React.ReactNode;

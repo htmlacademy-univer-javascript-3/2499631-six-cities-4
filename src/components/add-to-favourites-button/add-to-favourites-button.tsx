@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 
-import { Routes, FavouriteStatus } from '../../const';
+import { Routes, FavouriteStatus } from '../../consts/const.ts';
 
 import {
   getIsFavoriteStatusSubmitting,

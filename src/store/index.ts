@@ -1,4 +1,4 @@
-export { store } from './store';
+export { store } from './store_configuration/store.ts';
 
 export {
   fetchOfferAction,

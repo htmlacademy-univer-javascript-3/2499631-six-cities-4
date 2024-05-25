@@ -1,6 +1,6 @@
-import { NameSpace } from '../../../const';
-import { Offer } from '../../../types/offer';
-import { State } from '../../../types/state';
+import { NameSpace } from '../../../consts/const.ts';
+import { Offer } from '../../../types/offer/offer.ts';
+import { State } from '../../../types/state/state.ts';
 
 export const getFavorites = (state: State): Offer[] =>
   state[NameSpace.FavouritesData].favourites;

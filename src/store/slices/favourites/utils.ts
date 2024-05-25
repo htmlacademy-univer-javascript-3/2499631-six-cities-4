@@ -1,4 +1,4 @@
-import { Offer } from '../../../types/offer';
+import { Offer } from '../../../types/offer/offer.ts';
 
 export const updateFavourites = (favorites: Offer[], updatedOffer: Offer) => {
   const favoriteOfferIndex = favorites.findIndex(

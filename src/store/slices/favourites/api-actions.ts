@@ -1,10 +1,10 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { Offer } from '../../../types/offer';
-import { FavouriteData } from '../../../types/favourite-data';
+import { Offer } from '../../../types/offer/offer.ts';
+import { FavouriteData } from '../../../types/favourite_data/favourite-data.ts';
 
-import { APIRoute, NameSpace } from '../../../const';
+import { APIRoute, NameSpace } from '../../../consts/const.ts';
 
-import { AsyncThunkConfig } from '../../../types/state';
+import { AsyncThunkConfig } from '../../../types/state/state.ts';
 import { updateMultipleOffers } from '../multiple-offers/multiple-offers-data';
 import { updateSingleOffer } from '../offer/single-offer-data';
 import { updateMultipleFavourites } from './favourites-data';

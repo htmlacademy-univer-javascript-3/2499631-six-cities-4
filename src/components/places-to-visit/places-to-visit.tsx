@@ -1,6 +1,6 @@
 import CitiesMap from '../cities-map/cities-map';
 import cn from 'classnames';
-import { Offer } from '../../types/offer';
+import { Offer } from '../../types/offer/offer.ts';
 import { useCallback, useState } from 'react';
 import OffersContainer from '../offers-container/offers-container';
 

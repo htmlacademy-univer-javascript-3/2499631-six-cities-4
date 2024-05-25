@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { changeCity, getIsSubmittingLogin, loginAction } from '../../store';
 import { useNavigate } from 'react-router-dom';
-import { Routes, CityName } from '../../const';
+import { Routes, CityName } from '../../consts/const.ts';
 import { toast } from 'react-toastify';
 import { useAppDispatch, useAppSelector } from '../../hooks';
 

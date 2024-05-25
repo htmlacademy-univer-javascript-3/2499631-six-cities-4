@@ -1,4 +1,4 @@
-import { Offer } from '../../../types/offer';
+import { Offer } from '../../../types/offer/offer.ts';
 
 export const updateFavourites = (nearby: Offer[], updatedOffer: Offer) => {
   const offerNearbyIndex = nearby.findIndex((el) => el.id === updatedOffer.id);
