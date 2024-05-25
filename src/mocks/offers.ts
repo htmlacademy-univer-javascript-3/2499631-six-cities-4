@@ -99,7 +99,7 @@ export const offers: Offer[] = [
   },
   {
     id: '5',
-    title: 'Мурино',
+    title: 'some place',
     type: 'apartment',
     price: 120,
     city: {
