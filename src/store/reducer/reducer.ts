@@ -1,13 +1,13 @@
-import { NameSpace } from '../const';
+import { NameSpace } from '../../consts/const.ts';
 import { combineReducers } from '@reduxjs/toolkit';
 
-import { userData } from './slices/user';
-import { multipleOffersData } from './slices/multiple-offers';
-import { singleOfferData } from './slices/offer';
-import { nearbyOffersData } from './slices/nearby-offers';
-import { reviewsData } from './slices/reviews';
-import { favouritesData } from './slices/favourites';
-import { globalState } from './slices/global';
+import { userData } from '../slices/user';
+import { multipleOffersData } from '../slices/multiple-offers';
+import { singleOfferData } from '../slices/offer';
+import { nearbyOffersData } from '../slices/nearby-offers';
+import { reviewsData } from '../slices/reviews';
+import { favouritesData } from '../slices/favourites';
+import { globalState } from '../slices/global';
 
 export const reducer = combineReducers({
   [NameSpace.App]: globalState.reducer,

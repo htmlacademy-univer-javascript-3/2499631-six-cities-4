@@ -1,6 +1,6 @@
 import { getAuthCheckedStatus, getReviews } from '../../store';
 import { useAppSelector } from '../../hooks';
-import { Offer, ExtendedOffer } from '../../types/offer';
+import { Offer, ExtendedOffer } from '../../types/offer/offer.ts';
 import CommentForm from '../comment-form/comment-form';
 import OfferDescription from '../offer-description/offer-description';
 import OfferPictures from '../offer-pictures/offer-pictures';

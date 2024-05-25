@@ -1,4 +1,4 @@
-import { Offer } from '../../../types/offer';
+import { Offer } from '../../../types/offer/offer.ts';
 
 export const updateOffers = (offers: Offer[], updatedOffer: Offer) => {
   const offerIndex = offers.findIndex((el) => el.id === updatedOffer.id);

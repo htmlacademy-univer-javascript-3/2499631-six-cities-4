@@ -1,7 +1,7 @@
-import { Offer, ExtendedOffer } from '../../../types/offer';
+import { Offer, ExtendedOffer } from '../../../types/offer/offer.ts';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { fetchOfferAction } from './api-actions';
-import { NameSpace } from '../../../const';
+import { NameSpace } from '../../../consts/const.ts';
 
 type SingleOfferData = {
   offer: ExtendedOffer | null;

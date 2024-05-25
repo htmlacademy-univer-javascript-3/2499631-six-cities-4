@@ -1,4 +1,4 @@
-import { ExtendedOffer } from '../../types/offer';
+import { ExtendedOffer } from '../../types/offer/offer.ts';
 
 type OfferHostProps = {
   host: ExtendedOffer['host'];

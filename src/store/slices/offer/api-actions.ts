@@ -1,9 +1,9 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { ExtendedOffer } from '../../../types/offer';
-import { APIRoute, Routes, NameSpace } from '../../../const';
+import { ExtendedOffer } from '../../../types/offer/offer.ts';
+import { APIRoute, Routes, NameSpace } from '../../../consts/const.ts';
 
-import { AsyncThunkConfig } from '../../../types/state';
-import { redirectToRoute } from '../../action';
+import { AsyncThunkConfig } from '../../../types/state/state.ts';
+import { redirectToRoute } from '../../action/action.ts';
 
 export const fetchOfferAction = createAsyncThunk<
   ExtendedOffer | null,

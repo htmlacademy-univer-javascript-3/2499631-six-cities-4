@@ -4,7 +4,7 @@ import axios, {
   AxiosError,
   InternalAxiosRequestConfig,
 } from 'axios';
-import { getToken } from './token';
+import { getToken } from '../token/token.ts';
 import { StatusCodes } from 'http-status-codes';
 import { toast } from 'react-toastify';
 

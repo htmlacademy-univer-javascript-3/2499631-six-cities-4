@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useAppOutletContext } from '../../components/page-layout/hooks';
-import { ExtendedOffer } from '../../types/offer';
+import { ExtendedOffer } from '../../types/offer/offer.ts';
 import {
   fetchNearbyAction,
   fetchOfferAction,

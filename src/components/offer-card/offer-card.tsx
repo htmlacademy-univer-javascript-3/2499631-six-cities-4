@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import { capitalizeFirstLetter, formatRating } from '../../utils';
+import { capitalizeFirstLetter, formatRating } from '../../utils/utils.ts';
 import { CardType } from '../offers-list/offers-list';
-import { Offer } from '../../types/offer';
+import { Offer } from '../../types/offer/offer.ts';
 import AddToFavouritesButton from '../add-to-favourites-button/add-to-favourites-button';
 
 type PlaceCardProps = Offer & {

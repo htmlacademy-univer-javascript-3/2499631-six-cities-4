@@ -1,5 +1,5 @@
-import { Review } from './review';
-import { ExtendedOffer, Offer } from './offer';
+import { Review } from '../review/review.ts';
+import { ExtendedOffer, Offer } from '../offer/offer.ts';
 
 export type OfferData = {
   offerInfo: ExtendedOffer;

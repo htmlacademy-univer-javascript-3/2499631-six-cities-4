@@ -1,7 +1,7 @@
 import OffersList from '../offers-list/offers-list';
-import { Offer } from '../../types/offer.ts';
+import { Offer } from '../../types/offer/offer.ts';
 import { Link } from 'react-router-dom';
-import { Routes, CityName } from '../../const';
+import { Routes, CityName } from '../../consts/const.ts';
 import { changeCity } from '../../store';
 import { useAppDispatch } from '../../hooks';
 

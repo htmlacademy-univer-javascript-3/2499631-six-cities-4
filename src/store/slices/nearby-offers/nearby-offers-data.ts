@@ -1,6 +1,6 @@
-import { Offer } from '../../../types/offer';
+import { Offer } from '../../../types/offer/offer.ts';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { NameSpace } from '../../../const';
+import { NameSpace } from '../../../consts/const.ts';
 import { fetchNearbyAction } from './api-actions';
 import { updateFavourites } from './utils';
 

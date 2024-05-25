@@ -1,9 +1,9 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { APIRoute, NameSpace } from '../../../const';
-import { AsyncThunkConfig } from '../../../types/state';
-import { AuthData } from '../../../types/auth-data';
-import { UserData } from '../../../types/user-data';
-import { dropToken, saveToken } from '../../../services/token';
+import { APIRoute, NameSpace } from '../../../consts/const.ts';
+import { AsyncThunkConfig } from '../../../types/state/state.ts';
+import { AuthData } from '../../../types/auth_data/auth-data.ts';
+import { UserData } from '../../../types/user_data/user-data.ts';
+import { dropToken, saveToken } from '../../../services/token/token.ts';
 import { fetchOffersAction } from '../multiple-offers';
 
 export const checkAuthAction = createAsyncThunk<

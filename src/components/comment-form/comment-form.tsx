@@ -9,7 +9,7 @@ import {
 
 import { useAppDispatch, useAppSelector } from '../../hooks';
 
-import { Status } from '../../const';
+import { Status } from '../../consts/const.ts';
 
 const ratingTypes: Record<string, number> = {
   terribly: 1,

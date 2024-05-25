@@ -1,7 +1,7 @@
-import { AuthorizationStatus, NameSpace } from '../../../const';
-import { UserData } from '../../../types/user-data';
+import { AuthorizationStatus, NameSpace } from '../../../consts/const.ts';
+import { UserData } from '../../../types/user_data/user-data.ts';
 
-import { State } from '../../../types/state';
+import { State } from '../../../types/state/state.ts';
 
 export const getAuthCheckedStatus = (state: State): boolean =>
   state[NameSpace.User].authorizationStatus === AuthorizationStatus.Auth;

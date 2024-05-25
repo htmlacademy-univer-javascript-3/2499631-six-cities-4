@@ -1,4 +1,4 @@
-import { CityName, NameSpace, SortingType } from '../../../const';
+import { CityName, NameSpace, SortingType } from '../../../consts/const.ts';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 const DEFAULT_SELECTED_CITY = CityName.Paris;
